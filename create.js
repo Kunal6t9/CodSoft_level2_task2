@@ -6,15 +6,15 @@ function counter() {
 }
 
 function show_list() {
-  const list = document.getElementById("ques-list");
+  let list = document.getElementById("ques-list");
   list.innerHTML = "";
 
   arr.forEach((item, index) => {
-    const li = document.createElement("li");
+    let li = document.createElement("li");
     li.textContent = `${item.ques} (Correct: ${item.op[item.correct]}) `;
 
     // Edit Button
-    const btn = document.createElement("button");
+    let btn = document.createElement("button");
     btn.textContent = "Edit";
     btn.onclick = () => {
       document.getElementById("question").value = item.ques;
@@ -27,7 +27,7 @@ function show_list() {
     };
 
     // Delete Button
-    const del_btn = document.createElement("button");
+    let del_btn = document.createElement("button");
     del_btn.textContent = "Delete";
     del_btn.onclick = () => {
       arr.splice(index, 1);
@@ -49,14 +49,14 @@ document.getElementById("quiz").addEventListener("submit", function(e){
     return;
   }
 
-  const ques = document.getElementById("question").value;
-  const op = [
+  let ques = document.getElementById("question").value;
+  let op = [
     document.getElementById("opt1").value,
     document.getElementById("opt2").value,
     document.getElementById("opt3").value,
     document.getElementById("opt4").value
   ];
-  const correct = parseInt(document.getElementById("correct").value) - 1;
+  let correct = parseInt(document.getElementById("correct").value) - 1;
 
   if (editingIndex === -1) {
     arr.push({ques, op, correct});
@@ -72,7 +72,7 @@ document.getElementById("quiz").addEventListener("submit", function(e){
 
 // Save to localStorage
 function save_quiz() {
-  const quizName = document.getElementById("quizName").value.trim();
+  let quizName = document.getElementById("quizName").value.trim();
   if (!quizName) {
     alert("Please enter a quiz name.");
     return;

@@ -1,0 +1,64 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+a {
+  display: inline-block;
+  background-color: #1f1f1f;
+  color: #00ffc8;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin: 10px;
+  border: 1px solid #00ffc8;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+a:hover {
+  background-color: #00ffc8;
+  color: #121212;
+  box-shadow: 0 0 12px #00ffc8;
+}
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  input, button, select {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1rem;
+  }
+
+  #quiz-box, #result-box, ul#ques-list li {
+    width: 100% !important;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  ul#ques-list li {
+    font-size: 0.95rem;
+  }
+
+  #options-list li {
+    margin-bottom: 10px;
+  }
+
+  #quiz-box button {
+    width: 48%;
+    margin: 5px 1%;
+  }
+}

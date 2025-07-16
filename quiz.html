@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <h2>Online Quiz Maker</h2>
+
+<!-- Option 1: Take Random Predefined Quiz -->
+<button onclick="random()">Take a Random Quiz</button>
+
+<!-- Option 2: Choose From Saved Quizzes -->
+<select id="quiz-select">
+  <option value="">-- Select a Saved Quiz --</option>
+</select>
+<button onclick="load_quiz()">Take Selected Quiz</button>
+
+<!-- Option 3: Create Your Own -->
+<p>Want to create a new quiz? <a href="create.html">Click here</a></p>
+
+<!-- Quiz Display Section -->
+<div id="quiz-box" style="display: none;">
+  <h3 id="question-text"></h3>
+  <ul id="options-list"></ul>
+  
+  <button onclick="prev_ques()">Previous</button>
+  <button onclick="next_ques()">Next</button>
+</div>
+
+<!-- Result box stays same -->
+<div id="result-box" style="display: none;">
+  <h3>Quiz Completed!</h3>
+  <p id="score-text"></p>
+  <button onclick="location.reload()">Back to Home</button>
+</div>
+
+<!-- Result Section -->
+<div id="result-box" style="display: none;">
+  <h3>Quiz Completed</h3>
+  <p id="score-text"></p>
+  <button onclick="location.reload()">Back to Home</button>
+</div>
+
+<script src="quiz.js"></script>  
+</body>
+</html>

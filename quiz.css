@@ -1,0 +1,129 @@
+/* Base dark layout */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Main heading */
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Dropdown & button row */
+select, button {
+  font-size: 1rem;
+  padding: 10px 16px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  border: 1px solid #00ffc8;
+  background: #1e1e1e;
+  color: #00ffc8;
+  transition: 0.3s ease;
+}
+
+select:focus, button:hover {
+  outline: none;
+  background-color: #00ffc8;
+  color: #121212;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+/* Quiz box container */
+#quiz-box {
+  background-color: #1f1f1f;
+  border: 1px solid #00ffc8;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px #00ffc8;
+  text-align: left;
+}
+
+/* Question text */
+#question-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Options list */
+#options-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#options-list li {
+  margin-bottom: 12px;
+}
+
+/* Radio + Label layout */
+#options-list input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #00ffc8;
+}
+
+/* Previous & Next buttons */
+#quiz-box button {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+/* Result box */
+#result-box {
+  background-color: #1f1f1f;
+  border: 1px solid #00ffc8;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+#score-text {
+  font-size: 1.2rem;
+  color: #00ffc8;
+}
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  input, button, select {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1rem;
+  }
+
+  #quiz-box, #result-box, ul#ques-list li {
+    width: 100% !important;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  ul#ques-list li {
+    font-size: 0.95rem;
+  }
+
+  #options-list li {
+    margin-bottom: 10px;
+  }
+
+  #quiz-box button {
+    width: 48%;
+    margin: 5px 1%;
+  }
+}
+

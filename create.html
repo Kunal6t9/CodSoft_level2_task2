@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="create.css">
+</head>
+<body>
+  <h2>Create a Quiz</h2>
+
+  <!-- Quiz Name -->
+  <input type="text" id="quizName" placeholder="Enter Quiz Name" required><br/><br/>
+
+  <form id="quiz">
+    <input type="text" id="question" placeholder="Enter Question" required><br/>
+    <input type="text" id="opt1" placeholder="Option 1" required><br/>
+    <input type="text" id="opt2" placeholder="Option 2" required><br/>
+    <input type="text" id="opt3" placeholder="Option 3" required><br/>
+    <input type="text" id="opt4" placeholder="Option 4" required><br/>
+    <input type="number" id="correct" placeholder="Correct option (1-4)" required><br/>
+    <button type="submit">Add</button>
+  </form>
+
+  <h3>You Added the Following Questions (<span id="counter">0</span>/10)</h3>
+  <ul id="ques-list"></ul>
+
+  <button onclick="save_quiz()">Click to Save</button>
+
+  <script src="create.js"></script>
+</body>
+</html>

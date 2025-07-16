@@ -1,0 +1,116 @@
+/* Overall dark theme with centered layout */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+/* Page Heading */
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+input {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  background-color: #1e1e1e;
+  border: 1px solid #00ffc8;
+  border-radius: 6px;
+  color: #00ffc8;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+/* Buttons */
+button {
+  background: transparent;
+  color: #00ffc8;
+  border: 1px solid #00ffc8;
+  padding: 12px 24px;
+  margin: 12px 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ffc8;
+  color: #121212;
+  box-shadow: 0 0 12px #00ffc8;
+}
+
+/* Question list below form */
+ul#ques-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+ul#ques-list li {
+  background: #1f1f1f;
+  color: #00ffc8;
+  border: 1px solid #00ffc8;
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+/* Edit & Delete buttons inline */
+ul#ques-list button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  input, button, select {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1rem;
+  }
+
+  #quiz-box, #result-box, ul#ques-list li {
+    width: 100% !important;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  ul#ques-list li {
+    font-size: 0.95rem;
+  }
+
+  #options-list li {
+    margin-bottom: 10px;
+  }
+
+  #quiz-box button {
+    width: 48%;
+    margin: 5px 1%;
+  }
+}

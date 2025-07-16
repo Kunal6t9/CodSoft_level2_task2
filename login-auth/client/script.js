@@ -28,7 +28,6 @@ const login = async () => {
   if (res.ok) {
     document.getElementById("message").innerText = data.message;
 
-    // ✅ Redirect to quiz app index.html after 1 second
     setTimeout(() => {
       window.location.href = "../../index.html";
     }, 1000);

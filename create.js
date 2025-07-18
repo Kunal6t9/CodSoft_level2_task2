@@ -84,7 +84,7 @@ function save_quiz() {
   localStorage.setItem("allQuizzes", JSON.stringify(allQuizzes));
   alert(`Quiz "${quizName}" saved successfully!`);
 
-  // Clear everything
+  // Clear
   arr = [];
   e_index = -1;
   show_list();

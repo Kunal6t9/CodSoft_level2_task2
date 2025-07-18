@@ -1,4 +1,3 @@
-/* Overall dark theme with centered layout */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -8,14 +7,12 @@ body {
   margin: 0;
 }
 
-/* Page Heading */
 h2 {
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 30px;
 }
 
-/* Input fields */
 input {
   width: 80%;
   max-width: 500px;
@@ -35,7 +32,6 @@ input:focus {
   box-shadow: 0 0 10px #00ffc8;
 }
 
-/* Buttons */
 button {
   background: transparent;
   color: #00ffc8;
@@ -54,7 +50,6 @@ button:hover {
   box-shadow: 0 0 12px #00ffc8;
 }
 
-/* Question list below form */
 ul#ques-list {
   list-style: none;
   padding: 0;
@@ -73,7 +68,6 @@ ul#ques-list li {
   text-align: left;
 }
 
-/* Edit & Delete buttons inline */
 ul#ques-list button {
   padding: 6px 12px;
   margin-left: 10px;

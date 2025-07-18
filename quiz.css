@@ -1,4 +1,3 @@
-/* Base dark layout */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -8,14 +7,12 @@ body {
   text-align: center;
 }
 
-/* Main heading */
 h2 {
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-/* Dropdown & button row */
 select, button {
   font-size: 1rem;
   padding: 10px 16px;
@@ -34,7 +31,6 @@ select:focus, button:hover {
   box-shadow: 0 0 10px #00ffc8;
 }
 
-/* Quiz box container */
 #quiz-box {
   background-color: #1f1f1f;
   border: 1px solid #00ffc8;
@@ -46,14 +42,13 @@ select:focus, button:hover {
   text-align: left;
 }
 
-/* Question text */
 #question-text {
   font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-/* Options list */
+
 #options-list {
   list-style: none;
   padding: 0;
@@ -64,19 +59,17 @@ select:focus, button:hover {
   margin-bottom: 12px;
 }
 
-/* Radio + Label layout */
+
 #options-list input[type="radio"] {
   margin-right: 10px;
   accent-color: #00ffc8;
 }
 
-/* Previous & Next buttons */
 #quiz-box button {
   display: inline-block;
   margin: 5px 10px;
 }
 
-/* Result box */
 #result-box {
   background-color: #1f1f1f;
   border: 1px solid #00ffc8;
@@ -91,7 +84,7 @@ select:focus, button:hover {
   font-size: 1.2rem;
   color: #00ffc8;
 }
-/* Mobile Responsiveness */
+
 @media (max-width: 600px) {
   body {
     padding: 20px;

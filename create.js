@@ -1,5 +1,5 @@
 let arr = [];
-let editingIndex = -1;
+let e_index = -1;
 
 function counter() {
   document.getElementById("counter").textContent = arr.length;
@@ -23,7 +23,7 @@ function show_list() {
       document.getElementById("opt3").value = item.op[2];
       document.getElementById("opt4").value = item.op[3];
       document.getElementById("correct").value = item.correct + 1;
-      editingIndex = index;
+      e_index = index;
     };
 
     // Delete Button
@@ -44,7 +44,7 @@ function show_list() {
 document.getElementById("quiz").addEventListener("submit", function(e){
   e.preventDefault();
 
-  if (arr.length >= 10 && editingIndex === -1) {
+  if (arr.length >= 10 && e_index === -1) {
     alert("Maximum of 10 questions allowed.");
     return;
   }
@@ -58,11 +58,11 @@ document.getElementById("quiz").addEventListener("submit", function(e){
   ];
   let correct = parseInt(document.getElementById("correct").value) - 1;
 
-  if (editingIndex === -1) {
+  if (e_index === -1) {
     arr.push({ques, op, correct});
   } else {
-    arr[editingIndex] = {ques, op, correct};
-    editingIndex = -1;
+    arr[e_index] = {ques, op, correct};
+    e_index = -1;
   }
 
   this.reset();
@@ -86,7 +86,7 @@ function save_quiz() {
 
   // Clear everything
   arr = [];
-  editingIndex = -1;
+  e_index = -1;
   show_list();
   counter();
   document.getElementById("quiz").reset();

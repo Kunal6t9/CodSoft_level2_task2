@@ -31,7 +31,7 @@ saved();
 function random() {
   cur_quiz = shuffle([...default_quiz]).slice(0, 5);
   ans = new Array(cur_quiz.length).fill(null);
-  startQuiz();
+  start();
 }
 
 function load_quiz() {
@@ -39,10 +39,10 @@ function load_quiz() {
   if (!name) return alert("Select a quiz");
   cur_quiz = shuffle([...all_quiz[name]]);
   ans = new Array(cur_quiz.length).fill(null);
-  startQuiz();
+  start();
 }
 
-function startQuiz() {
+function start() {
   cur_ques = 0;
   score = 0;
   document.getElementById("quiz-box").style.display = "block";
